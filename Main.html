@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>${title}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
     <style>
         /* Sticky footer styles */
         html {
@@ -32,7 +32,7 @@
     </style>
 </head>
 <body>
-    
+    <!-- Static navbar -->
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header">
@@ -44,17 +44,16 @@
                 <a class="navbar-brand" href="#">Your App</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav"><li><li class="active"><a href="index.html">Home</a></li></li><li><li><a href="about.html">About</a></li></li></ul>
+                <ul class="nav navbar-nav" data-hole="menubar"></ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
- <a href="http://websharper.com">websharper.com</a>
-</li>
+                    <li><a href="http://websharper.com">websharper.com</a></li>
                 </ul>
-            </div>
+            </div><!--/.nav-collapse -->
         </div>
     </nav>
     <div class="container">
-        <h1>Say Hi to JavaScript!</h1><div><div id="ws1175501460"></div></div>
+        <div data-replace="body">
+        </div>
     </div>
     <footer class="footer">
         <div class="container">
@@ -64,29 +63,6 @@
             </p>
         </div>
     </footer>
-    <meta id='websharper-data' name='websharper-data' content='{"$TYPES":[["WebSharper","Web","InlineControl"]],"$DATA":{"$V":{"ws1175501460":{"$T":0,"$V":{"args":[],"funcName":["HtmlApplication1","Client","Main"]}}}}}' />
-<script src="Scripts/WebSharper.Core.JavaScript/Runtime.js" type="text/javascript" charset="UTF-8">
-
-</script><script src="http://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript" charset="UTF-8">
-
-</script><!--[if lte IE 7.0]>
-<script src="Scripts/WebSharper.Main/Json.js" type="text/javascript" charset="UTF-8">
-
-</script><![endif]-->
-<script src="Scripts/WebSharper.Main/WebSharper.Main.js" type="text/javascript" charset="UTF-8">
-
-</script><script src="Scripts/WebSharper.Collections/WebSharper.Collections.js" type="text/javascript" charset="UTF-8">
-
-</script><script src="Scripts/WebSharper.Web/WebSharper.Web.js" type="text/javascript" charset="UTF-8">
-
-</script><script src="Scripts/HtmlApplication1/HtmlApplication1.js" type="text/javascript" charset="UTF-8">
-
-</script><script src="Scripts/WebSharper.Html.Client/WebSharper.Html.Client.js" type="text/javascript" charset="UTF-8">
-
-</script><script type='text/javascript'>
-if (typeof IntelliFactory !=='undefined')
-  IntelliFactory.Runtime.Start();
-</script>
-
+    <script data-replace="scripts"></script>
 </body>
 </html>
